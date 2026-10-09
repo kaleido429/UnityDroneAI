@@ -1,0 +1,13 @@
+{
+  "hardware_arming_enabled": false,
+  "service_uuid": "74b70000-5401-4fba-8984-fddff08b0100",
+  "identity_uuid": "74b70001-5401-4fba-8984-fddff08b0100",
+  "control_uuid": "74b70002-5401-4fba-8984-fddff08b0100",
+  "telemetry_uuid": "74b70003-5401-4fba-8984-fddff08b0100",
+  "ack_uuid": "74b70004-5401-4fba-8984-fddff08b0100",
+  "stale_seconds": 2,
+  "rpc_timeout": 2,
+  "command_ttl_ms": 500,
+  "max_clock_rtt_ms": 150,
+  "command_hz": 10
+}

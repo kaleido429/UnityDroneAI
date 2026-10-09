@@ -1,0 +1,127 @@
+{
+  "model": "Models/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "unity": "6000.0.56f1",
+  "cpu": "13th Gen Intel(R) Core(TM) i5-1340P",
+  "ramMB": 15941,
+  "gpu": "Null Device",
+  "gpuLayers": 0,
+  "threads": 8,
+  "slots": 4,
+  "contextTotal": 4096,
+  "maxOutputTokens": 64,
+  "loadAndWarmupSeconds": 7.4256876,
+  "secondsRequestedPerMode": 60.0,
+  "method": "Completed, validated JSON commands; varying synthetic telemetry; no history growth; cached system prefix; no transport or game rendering load. Per-drone Hz = valid count / full measured wall time including drain. Gaps include mode start and trailing silence.",
+  "systemPrompt": "You are a game character issuing high-level velocity requests for ONE airship. This is an offline benchmark. Output only JSON with vx,vy,vz,yaw. Each value must be -0.2, 0, or 0.2. x is right, y is up, z is forward. Move toward the supplied target on each axis; yaw must be 0. No explanation.",
+  "grammar": "root ::= \"{\\\"vx\\\":\" val \",\\\"vy\\\":\" val \",\\\"vz\\\":\" val \",\\\"yaw\\\":\" val \"}\"\nval ::= \"-0.2\" | \"0\" | \"0.2\"",
+  "modes": [
+    {
+      "mode": "round_robin_4",
+      "wallSeconds": 61.010126899999996,
+      "drones": [
+        {
+          "drone": 0,
+          "requests": 16,
+          "valid": 16,
+          "directionCorrect": 0,
+          "commandsPerSecond": 0.26225154434156733,
+          "latencyP50": 0.94816120000000126,
+          "latencyP95": 1.6125511,
+          "latencyMax": 1.6125511,
+          "gapP95": 4.0934288999999993,
+          "gapMax": 4.0934288999999993
+        },
+        {
+          "drone": 1,
+          "requests": 16,
+          "valid": 16,
+          "directionCorrect": 5,
+          "commandsPerSecond": 0.26225154434156733,
+          "latencyP50": 0.95027660000000225,
+          "latencyP95": 1.0734996999999993,
+          "latencyMax": 1.0734996999999993,
+          "gapP95": 4.1195730999999967,
+          "gapMax": 4.1195730999999967
+        },
+        {
+          "drone": 2,
+          "requests": 16,
+          "valid": 16,
+          "directionCorrect": 0,
+          "commandsPerSecond": 0.26225154434156733,
+          "latencyP50": 0.94805310000000276,
+          "latencyP95": 1.0839803999999944,
+          "latencyMax": 1.0839803999999944,
+          "gapP95": 4.1701786,
+          "gapMax": 4.1701786
+        },
+        {
+          "drone": 3,
+          "requests": 16,
+          "valid": 16,
+          "directionCorrect": 0,
+          "commandsPerSecond": 0.26225154434156733,
+          "latencyP50": 0.95167100000000016,
+          "latencyP95": 1.061149799999999,
+          "latencyMax": 1.061149799999999,
+          "gapP95": 4.1818367999999992,
+          "gapMax": 4.1818367999999992
+        }
+      ]
+    },
+    {
+      "mode": "parallel_4",
+      "wallSeconds": 60.8611763,
+      "drones": [
+        {
+          "drone": 0,
+          "requests": 19,
+          "valid": 19,
+          "directionCorrect": 0,
+          "commandsPerSecond": 0.31218588195443736,
+          "latencyP50": 3.1898665999999984,
+          "latencyP95": 3.3821833,
+          "latencyMax": 3.3821833,
+          "gapP95": 3.334426999999998,
+          "gapMax": 3.3847685
+        },
+        {
+          "drone": 1,
+          "requests": 19,
+          "valid": 19,
+          "directionCorrect": 6,
+          "commandsPerSecond": 0.31218588195443736,
+          "latencyP50": 3.2097295999999957,
+          "latencyP95": 3.3355772999999971,
+          "latencyMax": 3.3355772999999971,
+          "gapP95": 3.2994695000000007,
+          "gapMax": 3.3356939000000025
+        },
+        {
+          "drone": 2,
+          "requests": 19,
+          "valid": 19,
+          "directionCorrect": 0,
+          "commandsPerSecond": 0.31218588195443736,
+          "latencyP50": 3.2125875000000015,
+          "latencyP95": 3.7941567,
+          "latencyMax": 3.7941567,
+          "gapP95": 3.352373,
+          "gapMax": 3.7979051999999998
+        },
+        {
+          "drone": 3,
+          "requests": 19,
+          "valid": 19,
+          "directionCorrect": 0,
+          "commandsPerSecond": 0.31218588195443736,
+          "latencyP50": 3.2126732000000011,
+          "latencyP95": 3.7953455999999997,
+          "latencyMax": 3.7953455999999997,
+          "gapP95": 3.3524646000000011,
+          "gapMax": 3.7991976999999997
+        }
+      ]
+    }
+  ]
+}

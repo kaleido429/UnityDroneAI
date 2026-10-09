@@ -1,0 +1,40 @@
+{
+  "design_only": true,
+  "hardware_arming_enabled": false,
+  "api": {"host": "127.0.0.1", "port": 8765, "workers": 1},
+  "transport": {
+    "kind": "ble_gatt",
+    "service_uuid": null,
+    "max_connections": 4,
+    "discovery_mode": "on_demand",
+    "auto_arm_on_connect": false,
+    "auto_resume_on_reconnect": false
+  },
+  "fleet": {"slots": ["slot-1", "slot-2", "slot-3", "slot-4"], "max_active": 4, "registry_capacity": 16},
+  "bench_candidates_not_validated": {"command_hz": 10, "telemetry_hz": 2, "command_ttl_ms": 500, "telemetry_stale_ms": 2000},
+  "vehicle_profile": {
+    "validated": false,
+    "surge_norm_max": null,
+    "reverse_supported": false,
+    "yaw_rate_rad_s_max": null,
+    "command_expiry_behavior": null,
+    "pid_profile_hash": null
+  },
+  "battery_profile": {
+    "validated": false,
+    "chemistry": null,
+    "series_cells": null,
+    "measurement_source": null,
+    "warning_voltage_v": null,
+    "replace_voltage_v": null,
+    "critical_voltage_v": null,
+    "warning_soc_pct": null,
+    "replace_soc_pct": null,
+    "critical_soc_pct": null,
+    "recovery_hysteresis": null,
+    "threshold_dwell_ms": null,
+    "recovery_time_seconds": null,
+    "preparation_margin_seconds": null,
+    "block_new_arm_if_unknown": true
+  }
+}
